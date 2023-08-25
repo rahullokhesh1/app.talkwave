@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Basic styling for the login form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+           input[type="text"],
+           input[type="number"] {
+           width: 100%;
+           padding: 10px;
+           margin-bottom: 10px;
+           border: 1px solid #ccc;
+           border-radius: 3px;
+           font-size: 16px;
+        }
+
+        
+
+        .login-box {
+            width: 300px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Center the form elements equally */
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the "Create One" link */
+        .create-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .create-link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2><img src="TALKwave.png" alt="Your Logo" width="300" height="40"></h2>
+        <div class="form-group">
+            <input type="number" id="code" placeholder="Enter Code">
+            <button onclick="login()">Login</button>
+        </div>
+        <div class="create-link">
+            <a href="chat.html" target="_blank"></a>
+        </div>
+        <div class="create-link">
+            <a href="createaccount.html" target="_blank">Create One</a>
+        </div>
+    </div>
+
+    <script>
+        // You can add JavaScript functionality here, e.g., handling login logic
+        function login() {
+            // Replace this with your actual login code
+            alert("Login button clicked");
+        }
+
+        function redirectToChatroom() {
+            // Redirect to chatroom.html
+            window.location.href = "chatroom.html";
+        }
+    </script>
+</body>
+</html>

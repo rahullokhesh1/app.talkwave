@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        /* Basic styling for the account creation form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .create-box {
+            width: 300px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .create-box h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        .create-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .create-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="create-box">
+        <h2>Create Account</h2>
+        <div class="form-group">
+            <input type="number" class="input-field" id="newCode" placeholder="Enter a 4-Digit Code">
+
+
+        </div>
+        <button onclick="createAccount()">Done</button>
+    </div>
+
+    <script>
+        // JavaScript for creating an account
+        function createAccount() {
+            // Get the entered code
+            const newCode = document.getElementById("newCode").value;
+
+            // Check if the code is 4 digits
+            if (newCode.length === 4) {
+                alert("Account created successfully!");
+            } else {
+                alert("Please enter a valid 4-digit code.");
+            }
+        }
+    </script>
+</body>
+</html>
